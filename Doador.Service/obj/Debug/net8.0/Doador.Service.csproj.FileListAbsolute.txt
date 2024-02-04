@@ -15,3 +15,4 @@ C:\Users\DELL\source\repos\Doardor.API\Doador.Service\obj\Debug\net8.0\Doador.Se
 C:\Users\DELL\source\repos\Doardor.API\Doador.Service\obj\Debug\net8.0\refint\Doador.Service.dll
 C:\Users\DELL\source\repos\Doardor.API\Doador.Service\obj\Debug\net8.0\Doador.Service.pdb
 C:\Users\DELL\source\repos\Doardor.API\Doador.Service\obj\Debug\net8.0\ref\Doador.Service.dll
+C:\Users\DELL\source\repos\Doardor.API\Doador.Service\obj\Debug\net8.0\Doador.Service.sourcelink.json

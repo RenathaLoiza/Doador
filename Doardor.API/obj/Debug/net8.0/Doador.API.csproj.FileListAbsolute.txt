@@ -43,3 +43,7 @@ C:\Users\DELL\source\repos\Doardor.API\Doardor.API\obj\Debug\net8.0\refint\Doado
 C:\Users\DELL\source\repos\Doardor.API\Doardor.API\obj\Debug\net8.0\Doador.API.pdb
 C:\Users\DELL\source\repos\Doardor.API\Doardor.API\obj\Debug\net8.0\Doador.API.genruntimeconfig.cache
 C:\Users\DELL\source\repos\Doardor.API\Doardor.API\obj\Debug\net8.0\ref\Doador.API.dll
+C:\Users\DELL\source\repos\Doardor.API\Doardor.API\obj\Debug\net8.0\Doador.API.sourcelink.json
+C:\Users\DELL\source\repos\Doardor.API\Doardor.API\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\DELL\source\repos\Doardor.API\Doardor.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\DELL\source\repos\Doardor.API\Doardor.API\bin\Debug\net8.0\Newtonsoft.Json.dll

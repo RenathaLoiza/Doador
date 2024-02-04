@@ -1,7 +1,6 @@
 ﻿using Doador.Domain.Commands;
 using Doador.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
 
 namespace Doador.API.Controllers
 {
@@ -29,8 +28,6 @@ namespace Doador.API.Controllers
         {
             return Ok(await _doadorService.GetActionAsync());
         }
-
-
 
         [HttpPut]
         [Route("Update")]

@@ -5,24 +5,32 @@ namespace Doador.Service.Service
 {
     public class DoadorService : IdoadorService
     {
-        public Task<string> DeleteAsync(int DoadorID)
+        private readonly IdoadorRepository _Repository;
+
+        public DoadorService(IdoadorRepository repository)
         {
-            throw new NotImplementedException();
+            _Repository = repository;
+        }
+        public async Task<string> DeleteAsync(int DoadorID)
+        {
+            return await _Repository.DeleteAsync(DoadorID);
         }
 
-        public Task<string> GetActionAsync()
+        public async Task<string> GetActionAsync()
         {
-            throw new NotImplementedException();
+            return await _Repository.GetActionAsync();
         }
 
-        public Task<string> PostCadastrarAsync(DoadorCommand command)
+        public async Task<string> PostCadastrarAsync(DoadorCommand command)
         {
-            throw new NotImplementedException();
+
+            return await _Repository.PostCadastrarAsync(command);
         }
 
-        public Task<string> PutAtualizarAsync(int DoadorID, DoadorCommand command)
+        public async Task<string> PutAtualizarAsync(int DoadorID, DoadorCommand command)
         {
-            throw new NotImplementedException();
+
+            return await _Repository.PutAtualizarAsync(DoadorID , command);
         }
     }
 }

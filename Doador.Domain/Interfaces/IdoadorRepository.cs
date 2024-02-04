@@ -8,5 +8,6 @@ namespace Doador.Domain.Interfaces
         Task<String> PutAtualizarAsync(int DoadorID, DoadorCommand command);
         Task<string> GetActionAsync();
         Task<String> DeleteAsync(int DoadorID);
+        
     }
 }
