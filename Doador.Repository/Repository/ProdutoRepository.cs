@@ -27,16 +27,16 @@ namespace Doador.Repository.Repository
         public async Task<string> PostCadastrarAsync(ProdutoCommand command)
         {
             string queryInsertDoador = @"
-            insert into Doador (produtoNome ,descricao ,categoria,QuantidadeDisponivelParaDoacao,DoadorId ) 
+            insert into Produto (produtoNome ,descricao ,categoria,QuantidadeDisponivelParaDoacao,DoadorId ) 
             values (@produtoNome ,@descricao ,@categoria,@QuantidadeDisponivelParaDoacao,@DoadorId ) ";
 
             using (SqlConnection conn = new SqlConnection(banco))
             {
                 conn.Execute(queryInsertDoador, new
                 {
-                    ProdutoNome = command.ProdutoNome,
-                    Descricao = command.Descricao,
-                    Categoria = command.Categoria,
+                    produtoNome = command.ProdutoNome,
+                    descricao = command.Descricao,
+                    categoria = command.Categoria,
                     QuantidadeDisponivelParaDoacao = command.QuantidadeDisponivelParaDoacao,
                     DoadorId = command.DoadorId,
                     
@@ -55,9 +55,9 @@ namespace Doador.Repository.Repository
             {
                 conn.Execute(queryUpdateDoador, new
                 {
-                    ProdutoNome = command.ProdutoNome,
-                    Descricao = command.Descricao,
-                    Categoria = command.Categoria,
+                    produtoNome = command.ProdutoNome,
+                    descricao = command.Descricao,
+                    categoria = command.Categoria,
                     QuantidadeDisponivelParaDoacao = command.QuantidadeDisponivelParaDoacao,
                     DoadorId = command.DoadorId,
 

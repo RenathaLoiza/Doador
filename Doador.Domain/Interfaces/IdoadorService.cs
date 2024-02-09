@@ -5,8 +5,8 @@ namespace Doador.Domain.Interfaces
     public interface IdoadorService
     {
         Task<string> PostCadastrarAsync(DoadorCommand command);
-        Task<String> PutAtualizarAsync(int DoadorID, DoadorCommand command);
+        Task<string> PutAtualizarAsync(int DoadorID, DoadorCommand command);
         Task<string> GetActionAsync();
-        Task<String> DeleteAsync(int DoadorID);
+        Task<string> DeleteAsync(int DoadorID);
     }
 }

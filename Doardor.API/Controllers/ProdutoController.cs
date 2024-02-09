@@ -4,11 +4,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Doador.API.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class ProdutoController : Controller
     {
-       private readonly IProdutoService _produtoService;
+        private readonly IProdutoService _produtoService;
 
-        public ProdutoController (IProdutoService produtoService)
+        public ProdutoController(IProdutoService produtoService)
         {
             _produtoService = produtoService;
         }

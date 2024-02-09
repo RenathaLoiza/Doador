@@ -15,10 +15,6 @@ builder.Services.AddScoped<IdoadorRepository, DoadorRepository>();
 builder.Services.AddScoped<IProdutoService, ProdutoService>();
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 
-
-
-
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -35,3 +31,22 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        b =>
+        {
+            b.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+
+        });
+
+
+});
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="../css/create.css">
+    <title>cadastro Produto</title>
+</head>
+<body>
+    <h2>Criar novo cadastro para produto </h2>
+    
+    <form id="create-form">
+        <label for ="produtoID">produtoID</label>
+        <input type="text" id="produtoID" required>
+        
+        <label for="NomeProduto">Nome Produto</label>
+        <input type="text" id="NomeProduto" required>
+
+        <label for="Descricao">Descricao</label>
+        <input type="text" id="Descricao" required>
+
+        <label for="categoria">categoria</label>
+        <input type="text" id="categoria" required>
+
+        <label for="QuantidadeDisponivelParaDoacao ">Quantidade Disponivel Para Doacao </label>
+        <input type="text" id="QuantidadeDisponivelParaDoacao " required>
+        
+        <label for="DoadorId">DoadorId</label>
+        <input type="text" id="DoadorId" required>
+        
+       
+<div>
+
+        <button type="button" onclick="createProduto()"> Salvar</button>
+    </div>    
+    </form>
+        <script src="../js/createProduto.js"></script>
+    </body>
+</html>
