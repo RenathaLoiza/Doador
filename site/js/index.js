@@ -41,3 +41,7 @@ document.addEventListener('DOMContentLoaded', function(){
 function abrirTelaDoador(){
     window.location.href = './pages/create.html';
 }
+
+function abrirTelaProduto(){
+    window.location.href = './pages/createProduto.html'; 
+}
